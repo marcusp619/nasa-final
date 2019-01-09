@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>NASA Final</h1>
     <Search />
   </div>
 </template>
@@ -16,6 +17,10 @@ export default {
 </script>
 
 <style>
+body {
+ background: #D46A6A;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,5 +28,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
 }
 </style>
