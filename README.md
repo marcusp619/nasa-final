@@ -13,12 +13,7 @@ View the NASA Astronomy Picture of the Day. User can see all the pictures for th
 
 ### Screenshots
 
-#### Landing Page:
-
-<img src='images/landing-app.png' alt='Main View' width='700' >
-
 #### Picture of the Day:
-
 
 ### Setup
 #### Frontend
