@@ -1,5 +1,22 @@
 <template>
   <div>
+    <div>
+      <button v-on:click="getPhotoOfTheDay()">Photo of the Day </button>
+      <button v-on:click="prevPhoto()">Previous Photo </button>
+      <button v-on:click="nextPhoto()">Next Photo </button>
+      <div>
+        <div v-if="POTD">
+          <p>{{POTD.title}}</p>
+          <img v-bind:src="POTD.url" />
+          <p>{{POTD.date}}</p>
+        </div>
+        <div v-if="displayedPic">
+          <p>{{displayedPic.title}}</p>
+          <img v-bind:src="displayedPic.url" />
+          <p>{{displayedPic.date}}</p>
+      </div>
+      </div>
+    </div>
   </div>
 </template>
 
