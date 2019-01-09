@@ -12,7 +12,7 @@
         </div>
         <div v-if="displayedPic">
           <p>{{displayedPic.title}}</p>
-          <img v-bind:src="displayedPic.url" />
+          <img v-bind:src="displayedPic.url" class="img"/>
           <p>{{displayedPic.date}}</p>
         </div>
       </div>
