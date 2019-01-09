@@ -7,7 +7,7 @@
       <div>
         <div v-if="POTD">
           <p>{{POTD.title}}</p>
-          <img v-bind:src="POTD.url" class="images"/>
+          <img v-bind:src="POTD.url" class="img"/>
           <p>{{POTD.date}}</p>
         </div>
         <div v-if="displayedPic">
@@ -63,8 +63,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .images {
-    height: 25%;
+  .img {
     width: 50%;
   }
 </style>
