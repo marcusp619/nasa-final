@@ -14,7 +14,7 @@
           <p>{{displayedPic.title}}</p>
           <img v-bind:src="displayedPic.url" />
           <p>{{displayedPic.date}}</p>
-      </div>
+        </div>
       </div>
     </div>
   </div>
