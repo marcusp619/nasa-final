@@ -5,14 +5,14 @@
       <button v-on:click="prevPhoto()">Previous Photo </button>
       <button v-on:click="nextPhoto()">Next Photo </button>
       <div>
-        <div v-if="POTD">
+        <div class="img" v-if="POTD">
           <p>{{POTD.title}}</p>
-          <img v-bind:src="POTD.url" class="img"/>
+          <img v-bind:src="POTD.url" />
           <p>{{POTD.date}}</p>
         </div>
-        <div v-if="displayedPic">
+        <div class="img"  v-if="displayedPic">
           <p>{{displayedPic.title}}</p>
-          <img v-bind:src="displayedPic.url" class="img"/>
+          <img v-bind:src="displayedPic.url" />
           <p>{{displayedPic.date}}</p>
         </div>
       </div>
