@@ -5,14 +5,14 @@
       <button v-on:click="prevPhoto()">Previous Photo </button>
       <button v-on:click="nextPhoto()">Next Photo </button>
       <div>
-        <div class="img" v-if="POTD">
+        <div  v-if="POTD">
           <p>{{POTD.title}}</p>
-          <img v-bind:src="POTD.url" />
+          <img v-bind:src="POTD.url"  class="img"/>
           <p>{{POTD.date}}</p>
         </div>
         <div class="img"  v-if="displayedPic">
           <p>{{displayedPic.title}}</p>
-          <img v-bind:src="displayedPic.url" />
+          <img v-bind:src="displayedPic.url" class="img"/>
           <p>{{displayedPic.date}}</p>
         </div>
       </div>
@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import axios from 'axios';
-export default {
+  import axios from 'axios';
+  export default {
     name: 'Search',
     data () {
       return {
