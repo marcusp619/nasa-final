@@ -12,7 +12,7 @@ View the NASA Astronomy Picture of the Day. User can see all the pictures for th
 * images deployed to an express server, built with express
 
 ### Screenshots
-
+![screenshot](https://github.com/marcusp619/nasa-final/blob/master/Screen%20Shot%202019-01-09%20at%2011.14.27%20AM.png?raw=true)
 #### Picture of the Day:
 
 ### Setup
