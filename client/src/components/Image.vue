@@ -33,6 +33,21 @@ export default {
       }
     },
     methods: {
+      getPhotoOfTheDay() {
+        const result = this.images.find(image => image.date === 'Wednesday, 1/9/19')
+        this.POTD = result;
+        this.displayedPic = '';
+      },
+      prevPhoto() {
+        this.POTD = '';
+        this.date > 0 ? this.date-- : this.date = 0;
+        this.displayedPic = this.images[this.date];
+      },
+      nextPhoto() {
+        this.POTD = '';
+        this.date < this.images.length - 1 ? this.date++ : this.date = 30;
+        this.displayedPic = this.images[this.date];
+      },
       async fetchPhotos() {
         const response = await axios.get('/api/v1/images');
         this.images = response.data.images
