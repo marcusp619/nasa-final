@@ -23,7 +23,7 @@
 <script>
 import axios from 'axios';
 export default {
-    name: 'Image',
+    name: 'Images',
     data () {
       return {
         query: '',
