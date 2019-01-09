@@ -21,12 +21,13 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
     name: 'Image',
     data () {
       return {
         query: '',
-        images: [...images],
+        images: [],
         POTD: '',
         displayedPic: ''
       }
