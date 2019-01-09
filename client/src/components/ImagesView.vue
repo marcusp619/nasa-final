@@ -28,6 +28,7 @@ export default {
       return {
         query: '',
         images: [],
+        date: 0,
         POTD: '',
         displayedPic: ''
       }
