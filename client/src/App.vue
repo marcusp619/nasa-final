@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <ImagesView />
+    <Search />
   </div>
 </template>
 
 <script>
-import ImagesView from './components/ImagesView.vue'
+import Search from './components/Search.vue'
 
 export default {
   name: 'app',
   components: {
-    ImagesView
+    Search
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
